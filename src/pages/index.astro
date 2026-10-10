@@ -1,7 +1,22 @@
 ---
-const education = [];
-const experience = [];
-const skills = [];
+const education = [
+{period:'2025 – d.d.',title:'Master i innovasjonsledelse',place:'Høyskolen Kristiania',detail:'Snittkarakter A · Strategi, innovasjon, ledelse, entreprenøriell finans og metode'},
+{period:'2022 – 2025',title:'Bachelor i markedsføringsledelse',place:'BI Trondheim',detail:'Snittkarakter B · Markedsføring, forbrukeratferd, metode, økonomi, ledelse og strategi'},
+{period:'2019 – 2022',title:'Studiespesialisering',place:'Valler videregående skole',detail:'Fordypning i økonomi'}
+];
+const experience = [
+{period:'2026',title:'Praktikant, Cappelen Damm AS',detail:'Kartlegging og analyse av målgruppen barn og unge, foreldres kjøpsatferd og utvikling av nye konsepter.'},
+{period:'2026',title:'Studentveileder, Høyskolen Kristiania',detail:'Vurdering av arbeidskrav, faglige tilbakemeldinger og veiledning av studenter.'},
+{period:'2025 – d.d.',title:'Salgsmedarbeider, Life Sandaker',detail:'Kundeveiledning, produktkunnskap, vareflyt og pakkeleveranser.'},
+{period:'2025',title:'Flyttepatrulje, OBOS (Construction City)',detail:'Koordinering, tilsyn og samarbeid under innflyttingsprosessen.'},
+{period:'2024 – 2025',title:'Salgsvert, Trondheim Kino',detail:'Salg, kundeservice, kvalitetsrutiner og gode kundeopplevelser.'},
+{period:'2023 – 2025',title:'Markedssjef, iBok (Samfundet)',detail:'Ledet et team på åtte med ansvar for personal, profilutvikling og markedsaktiviteter.'},
+{period:'2023',title:'Pressekontakt, UKA',detail:'Artikler og pressemeldinger til mediekanaler.'},
+{period:'2022 – 2023',title:'Markedskoordinator, iBok (Samfundet)',detail:'Markedsundersøkelser, kundestøtte og etablering av samarbeid.'},
+{period:'2022 – 2024',title:'Sommerhjelp, OBOS',detail:'Teamledelse i vedlikeholdsarbeid og aktivitetsledelse for barn.'},
+{period:'2021 – 2022',title:'Svømmeinstruktør og skuespillsjef i Vallerrevyen',detail:'Undervisning av barn, kommunikasjon med foreldre og ledelse av revygruppe.'}
+];
+const skills = ['Ledelse og teamarbeid','Kommunikasjon og formidling','Markedsføring og PR','Sosiale medier','Organisasjon og planlegging','Økonomi og struktur','Kundeservice','Norsk og engelsk'];
 ---
 <!doctype html>
 <html lang="no">
@@ -9,14 +24,14 @@ const skills = [];
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Personlig portefølje – student og jobbsøker." />
-  <title>Min portefølje | Student og jobbsøker</title>
+  <title>Christina Koch Sommerseth | Innovasjonsledelse</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header class="header wrap">
-    <a class="monogram" href="#hjem" aria-label="Til forsiden">PORTFØLJE</a>
+    <a class="monogram" href="#hjem" aria-label="Til forsiden">CS</a>
     <nav aria-label="Hovedmeny">
       <a href="#hjem">Hjem</a><a href="#om">Om meg</a><a href="#utdanning">Utdanning</a><a href="#erfaring">Erfaring</a><a href="#ferdigheter">Ferdigheter</a><a href="#kontakt">Kontakt</a>
     </nav>
@@ -25,14 +40,14 @@ const skills = [];
     <section class="hero wrap" id="hjem">
       <div class="hero-copy">
         <p class="eyebrow">PERSONLIG PORTFØLJE</p>
-        <h1>Student med blikket rettet mot fremtiden</h1>
-        <p class="lead">Velkommen! Her kan du bli bedre kjent med meg, utdanningen min og erfaringene jeg tar med meg videre i arbeidslivet.</p>
+        <h1>Masterstudent i innovasjonsledelse</h1>
+        <p class="lead">Jeg er masterstudent i innovasjonsledelse ved Høyskolen Kristiania, med bachelor i markedsføringsledelse fra BI. Jeg interesserer meg for strategi, mennesker og nye løsninger som skaper verdi.</p>
         <div class="actions"><a class="button primary" href="#utdanning">Bli kjent med meg <span aria-hidden="true">→</span></a><a class="button outline" href="#kontakt">Kontakt meg <span aria-hidden="true">→</span></a></div>
       </div>
-      <div class="portrait-wrap"><div class="blob"></div><div class="portrait"><span>Portrettbilde kommer her</span></div></div>
+      <div class="portrait-wrap"><div class="blob"></div><div class="portrait"><span>Portrettbilde legges til her</span></div></div>
     </section>
     <section class="about wrap" id="om">
-      <div><p class="eyebrow">OM MEG</p><h2>En engasjert og nysgjerrig student</h2><p>Her kommer en personlig introduksjon basert på CV-en og informasjonen du deler. Vi kan fremheve motivasjon, interesser og hva du ønsker å jobbe med.</p></div>
+      <div><p class="eyebrow">OM MEG</p><h2>En analytisk og kreativ problemløser</h2><p>Gjennom studier, markedsarbeid og lederroller har jeg fått erfaring med analyse, kommunikasjon, samarbeid og prosjektarbeid. Jeg trives med å omsette innsikt til konkrete ideer og løsninger.</p></div>
       <div class="traits">
         <article><div class="symbol">✦</div><h3>Nysgjerrig</h3><p>Åpen for nye perspektiver og muligheter.</p></article>
         <article><div class="symbol">♡</div><h3>Engasjert</h3><p>Motivert for å lære og bidra.</p></article>
@@ -40,9 +55,9 @@ const skills = [];
         <article><div class="symbol">◎</div><h3>Samarbeid</h3><p>Verdsetter gode relasjoner og samarbeid.</p></article>
       </div>
     </section>
-    <section class="section pale" id="utdanning"><div class="wrap"><h2>Utdanning <span class="accent-line"></span></h2>{education.length ? education.map(item => <article class="timeline"><strong>{item.title}</strong></article>) : <p class="placeholder">Utdanningen din legges inn her når du sender CV-en.</p>}</div></section>
-    <section class="section" id="erfaring"><div class="wrap"><h2>Erfaring <span class="accent-line"></span></h2>{experience.length ? experience.map(item => <article class="timeline"><strong>{item.title}</strong></article>) : <p class="placeholder">Arbeidserfaring, verv og prosjekter legges inn her fra CV-en din.</p>}</div></section>
-    <section class="bottom" id="ferdigheter"><div class="wrap bottom-grid"><div><h2>Ferdigheter <span class="accent-line"></span></h2>{skills.length ? skills.map(skill => <span class="pill">{skill}</span>) : <p>Ferdighetene dine legges inn her.</p>}</div><div id="kontakt"><h2>Kontakt <span class="accent-line"></span></h2><p>Kontaktinformasjon og lenker legges inn når du sender dem.</p><p class="small">CV-knapp og nedlastbar PDF kommer når CV-filen er lagt til.</p></div></div></section>
+    <section class="section pale" id="utdanning"><div class="wrap"><h2>Utdanning <span class="accent-line"></span></h2>{education.map(item => <article class="timeline"><span class="period">{item.period}</span><div><h3>{item.title}</h3><p>{item.place}<br />{item.detail}</p></div></article>)}</div></section>
+    <section class="section" id="erfaring"><div class="wrap"><h2>Erfaring <span class="accent-line"></span></h2>{experience.map(item => <article class="timeline"><span class="period">{item.period}</span><div><h3>{item.title}</h3><p>{item.detail}</p></div></article>)}</div></section>
+    <section class="bottom" id="ferdigheter"><div class="wrap bottom-grid"><div><h2>Ferdigheter <span class="accent-line"></span></h2><div class="pills">{skills.map(skill => <span class="pill">{skill}</span>)}</div></div><div id="kontakt"><h2>Kontakt <span class="accent-line"></span></h2><p><a href="tel:+4794149099">941 49 099</a></p><p><a href="mailto:christina.sommerseth@gmail.com">christina.sommerseth@gmail.com</a></p><p>Oslo, Norge</p></div></div></section>
   </main>
   <footer class="wrap"><span>Personlig portefølje</span><a href="#hjem">Til toppen ↑</a></footer>
 </body>
@@ -50,4 +65,4 @@ const skills = [];
 <style>
   :global(*){box-sizing:border-box} :global(html){scroll-behavior:smooth} :global(body){margin:0;background:#faf8f5;color:#171b3d;font-family:'DM Sans',sans-serif} :global(a){color:inherit;text-decoration:none} :global(p){line-height:1.75;color:#626a7e} :global(h1),:global(h2),:global(h3){font-family:'Playfair Display',Georgia,serif} :global(h2){font-size:clamp(2rem,4vw,3.1rem);line-height:1.17;margin:0 0 24px} .wrap{max-width:1160px;margin:auto;padding-left:32px;padding-right:32px}.header{min-height:90px;display:flex;justify-content:space-between;align-items:center;gap:24px}.monogram{font-family:Georgia,serif;font-weight:700;letter-spacing:.08em;font-size:17px}.header nav{display:flex;gap:28px;flex-wrap:wrap;font-size:13px;font-weight:600}.header nav a:hover{color:#438fc5}.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:70px;min-height:570px;padding-top:30px;padding-bottom:65px}.eyebrow{color:#d1a88f;letter-spacing:.22em;font-weight:700;font-size:12px}.hero h1{font-size:clamp(2.7rem,5vw,4.7rem);line-height:1.08;letter-spacing:-.035em;margin:22px 0}.lead{font-size:17px;max-width:490px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}.button{display:inline-flex;gap:25px;align-items:center;border-radius:100px;padding:15px 24px;font-size:13px;font-weight:700;border:1px solid #171b3d}.primary{background:#171b3d;color:white}.outline{background:transparent}.portrait-wrap{position:relative;min-height:460px;display:grid;place-items:center}.blob{position:absolute;inset:5% 0 3% 0;background:#d9eefc;border-radius:46% 54% 58% 42% / 50% 37% 63% 50%;transform:rotate(-17deg)}.portrait{position:relative;display:grid;place-items:center;width:76%;height:400px;background:linear-gradient(145deg,#e6d8cc,#f4eee8);border-radius:49% 51% 47% 53% / 57% 42% 58% 43%;transform:rotate(8deg);padding:30px;text-align:center}.portrait span{transform:rotate(-8deg);color:#79717a;font-size:14px}.about{display:grid;grid-template-columns:1fr 1fr;gap:80px;padding-top:80px;padding-bottom:100px}.about>div>p{max-width:500px}.traits{background:#eef6fb;border-radius:24px;padding:34px;display:grid;grid-template-columns:1fr 1fr;gap:28px}.traits h3{font-size:20px;margin:8px 0}.traits p{font-size:13px;margin:0}.symbol{display:grid;place-items:center;background:#d7ecfa;color:#438fc5;width:56px;height:56px;border-radius:50%;font-size:28px}.section{padding:85px 0 110px;min-height:300px}.pale{background:linear-gradient(110deg,#faf8f5 70%,#e3f2fc)}.accent-line{display:inline-block;vertical-align:middle;width:45px;height:2px;background:#d8b49e;margin-left:14px}.placeholder{border-left:2px solid #438fc5;padding:15px 0 15px 25px;max-width:600px}.bottom{background:linear-gradient(130deg,#e2f2fc,#d5eafa);padding:85px 0 105px}.bottom-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}.bottom-grid>div+div{border-left:1px solid #bdd5e4;padding-left:55px}.small{font-size:13px}footer{padding-top:30px!important;padding-bottom:30px!important;display:flex;justify-content:space-between;color:#626a7e;font-size:13px}
   @media(max-width:760px){.header{align-items:flex-start;flex-direction:column;padding-top:25px;padding-bottom:20px}.header nav{gap:13px 20px}.hero,.about,.bottom-grid{grid-template-columns:1fr;gap:35px}.hero{padding-top:40px}.portrait-wrap{min-height:350px}.portrait{height:310px;max-width:300px}.about{padding-top:35px;padding-bottom:65px}.traits{padding:25px}.bottom-grid>div+div{border:0;padding-left:0}.section,.bottom{padding-top:60px;padding-bottom:75px}.wrap{padding-left:22px;padding-right:22px}}
-</style>
+.timeline{display:grid;grid-template-columns:140px 1fr;gap:20px;position:relative;padding:10px 0 25px}.timeline:before{content:'';position:absolute;left:150px;top:22px;bottom:-10px;width:1px;background:#c7d9e5}.timeline:after{content:'';position:absolute;left:145px;top:18px;width:11px;height:11px;border-radius:50%;background:#438fc5}.timeline>div{padding-left:25px}.timeline h3{font-family:'DM Sans',sans-serif;font-size:16px;margin:0 0 5px}.timeline p{margin:0;font-size:14px}.period{color:#778195;font-size:14px}.pills{display:flex;flex-wrap:wrap;gap:10px}.pill{background:#ffffff99;padding:10px 14px;border-radius:25px;color:#365778;font-size:13px}@media(max-width:600px){.timeline{grid-template-columns:85px 1fr;gap:10px}.timeline:before{left:94px}.timeline:after{left:89px}.timeline>div{padding-left:20px}} </style>
