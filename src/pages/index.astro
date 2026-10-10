@@ -83,4 +83,8 @@ main > *{position:relative;z-index:2}
 .references{background:rgba(244,249,253,.82)}
 .bottom{background:linear-gradient(130deg,rgba(226,242,252,.88),rgba(213,234,250,.72))}
 @media(max-width:760px){main::before{width:25%;opacity:.3}.career-flow .timeline{max-width:100%}}
+
+/* Tapered wave asset: slim by the portrait, flowing more freely below. */
+main::before{top:130px;right:0;bottom:0;width:clamp(180px,38vw,510px);background:transparent url('/Christina-Koch-Sommerseth/vertical-wave.svg') no-repeat right center;background-size:100% 100%;border-radius:0;transform:none;opacity:1}
+@media(max-width:760px){main::before{width:35vw;opacity:.32}}
 </style>
