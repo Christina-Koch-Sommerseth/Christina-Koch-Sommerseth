@@ -1,4 +1,5 @@
 name: Deploy Astro to GitHub Pages
+# Redeploy requested 2026-10-10
 
 on:
   push:
