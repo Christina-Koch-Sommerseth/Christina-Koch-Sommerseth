@@ -72,4 +72,15 @@ const skills = ['Ledelse og teamarbeid','Kommunikasjon og formidling','MarkedsfÃ
 .career-flow::before{content:"";position:absolute;right:0;top:0;bottom:0;width:clamp(135px,24vw,355px);height:100%;z-index:-1;background:transparent url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20360%201000%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20fill%3D%22%23d9eefc%22%20d%3D%22M360%200%20C350%2042%20225%2065%20210%20130%20C192%20208%20330%20231%20310%20307%20C286%20393%20115%20390%2096%20485%20C76%20585%20315%20566%20286%20670%20C267%20744%20130%20747%20145%20830%20C159%20908%20343%20922%20360%201000%20Z%22%2F%3E%3C%2Fsvg%3E") no-repeat right center;background-size:100% 100%;clip-path:none;transform:none;border-radius:0}
 .career-flow .timeline{max-width:72%}
 @media(max-width:760px){.career-flow::before{display:none}.career-flow .timeline{max-width:100%}}
+
+/* Continuous soft decorative wave, from portrait to contact. */
+main{position:relative;isolation:isolate;overflow:hidden}
+main::before{content:"";position:absolute;top:130px;right:-7%;bottom:0;width:38%;z-index:1;pointer-events:none;background:#d9eefc;border-radius:63% 37% 58% 42% / 11% 23% 32% 34%;transform:rotate(3deg)}
+main > *{position:relative;z-index:2}
+.career-flow::before{display:none!important}
+.career-flow .timeline{max-width:72%}
+.career-flow .pale{background:transparent}
+.references{background:rgba(244,249,253,.82)}
+.bottom{background:linear-gradient(130deg,rgba(226,242,252,.88),rgba(213,234,250,.72))}
+@media(max-width:760px){main::before{width:25%;opacity:.3}.career-flow .timeline{max-width:100%}}
 </style>
