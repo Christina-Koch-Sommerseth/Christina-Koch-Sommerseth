@@ -87,4 +87,9 @@ main > *{position:relative;z-index:2}
 /* Tapered wave asset: slim by the portrait, flowing more freely below. */
 main::before{top:130px;right:0;bottom:0;width:clamp(180px,38vw,510px);background:transparent url('/Christina-Koch-Sommerseth/vertical-wave.svg') no-repeat right center;background-size:100% 100%;border-radius:0;transform:none;opacity:1}
 @media(max-width:760px){main::before{width:35vw;opacity:.32}}
+
+/* Bring education closer to the strengths panel without changing other sections. */
+.about{padding-bottom:35px}
+#utdanning.section{padding-top:48px}
+@media(max-width:760px){.about{padding-bottom:25px}#utdanning.section{padding-top:35px}}
 </style>
